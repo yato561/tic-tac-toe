@@ -16,7 +16,7 @@ public class CityFilter{
     private static void printCity(String country, String[] city){
         List<String> cities= new ArrayList<>();
         for(String o:city){
-            if(o.toUpperCase().contains("S")){
+            if(o.toUpperCase().contains("A")){
                 cities.add(o);
             }
         }
