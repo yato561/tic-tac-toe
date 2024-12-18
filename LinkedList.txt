@@ -1,0 +1,57 @@
+This code implements a simple linked list in Java. A linked list is a data structure where each element (called a node) contains a reference (or link) to the next element in the sequence.
+
+Here's a detailed explanation of the code:
+
+Node Class
+The Node class represents a single element in the linked list. It has two attributes:
+
+data: An integer value representing the data stored in the node.
+
+next: A reference to the next node in the list.
+
+The constructor initializes a new node with the given data and sets the next reference to null.
+
+LinkedList Class
+The LinkedList class represents the entire linked list. It has one attribute:
+
+head: A reference to the first node in the list.
+
+Methods
+insert(int data): This method inserts a new node with the given data at the end of the list.
+
+If the list is empty (i.e., head is null), the new node becomes the head.
+
+Otherwise, it traverses the list to find the last node and sets its next reference to the new node.
+
+display(): This method prints out the data of each node in the list.
+
+If the list is empty, it prints "List is empty".
+
+Otherwise, it traverses the list and prints the data of each node.
+
+delete(int key): This method deletes the first node that contains the specified key.
+
+If the list is empty, it prints "List is empty".
+
+If the head node contains the key, it updates the head to point to the next node.
+
+Otherwise, it traverses the list to find the node with the key. If found, it updates the previous node's next reference to skip the node with the key.
+
+Main Method
+The main method demonstrates the usage of the linked list:
+
+It creates a new LinkedList object.
+
+Inserts three nodes with values 10, 20, and 30.
+
+Displays the list.
+
+Deletes the node with value 20.
+
+Displays the list again to show the updated list.
+
+Explanation of Node head
+Node head is a reference to the first node in the linked list. It acts as the entry point to the list. If head is null, it means the list is empty. Otherwise, the head node's next reference points to the second node, which in turn points to the third node, and so on.
+
+If you have any specific questions or need further clarification, feel free to ask!
+
