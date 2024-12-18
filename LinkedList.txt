@@ -52,6 +52,23 @@ Displays the list again to show the updated list.
 
 Explanation of Node head
 Node head is a reference to the first node in the linked list. It acts as the entry point to the list. If head is null, it means the list is empty. Otherwise, the head node's next reference points to the second node, which in turn points to the third node, and so on.
+The line Node next in the Node class is a declaration of a reference variable named next of type Node. Here's a more detailed explanation:
 
-If you have any specific questions or need further clarification, feel free to ask!
+Detailed Explanation
+Node: This is the type of the variable. It indicates that next will be a reference to another instance of the Node class.
 
+next: This is the name of the variable. It will hold the reference to the next node in the linked list.
+
+Purpose of Node next
+In the context of a linked list, each node needs to know where the next node in the sequence is located. The next variable is used for this purpose. It creates a link to the next node, thus forming the chain of nodes that make up the linked list. If next is null, it means that the current node is the last node in the list.
+
+Visual Representation
+Consider this simple linked list: 10 -> 20 -> 30. Each node contains a value (data) and a reference to the next node (next):
+
+Node 1: data = 10, next = reference to Node 2
+
+Node 2: data = 20, next = reference to Node 3
+
+Node 3: data = 30, next = null (indicating the end of the list)
+
+In code, this is achieved using the Node next reference, allowing each node to point to the subsequent node, thus maintaining the structure of the linked list.
