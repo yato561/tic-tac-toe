@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class PerfectNumber{
+ public class PerfectNumber{
     public static boolean checknum(int num){
             if(num<=1) return false;// Ckecking whether num is lesser than or equal to 1 
             int sum=1;
