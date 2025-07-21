@@ -1,0 +1,130 @@
+<html><head> 
+    <title>login</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="login.css"> 
+   <style type="text/css" id="dcoder_stylesheet">body{
+    margin:0;
+    padding:0;
+    background:#000000;
+  }
+  .login{
+    width:280;
+    position:absolute;
+    left:40%;
+    top:30%;
+    border-radius:4px;
+    transfrom:translate(-50%,-50%);
+    color:white;
+  }
+  .login h1{
+    float:left;
+    font-size:40px;
+    border-bottom:4px solid #438d9c;
+    margin-bottom:4px;
+    padding:5px 0;
+  }
+  .text{
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    padding:8px 0;
+    margin:8px 0;
+    border-bottom:1px solid #438d9c;
+  }
+  .text i{
+    width:26px;
+    float:left;
+    text-align:center;
+  }
+  .text input{
+    border:none;
+    outline:none;
+    background:none;
+    color:white;
+    font-size:18px;
+    width:80%;
+    float:left;
+    margin:0 8px;
+  }
+  .btn{
+    position:absolute;
+    top:220px;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .btn{
+    background:none;
+    color:#ccc;
+    width:100%;
+    height:50px;
+    border:1px solid #438d9c;
+    font-size:18px;
+    border-radius:4px;
+    transition:.6s;
+    overflow:hidden;
+  }
+  .btn:focus{
+    outline:none;
+  }
+  .btn:before{
+    content:'';
+    display:block;
+    position:absolute;
+    background: rgba(255,255,255,.5);
+    width:60px;
+    height:100%;
+    left:0;
+    top:0;
+    opacity:.5;
+    filter:blur(30px);
+    transform:translateX(-130px) skewX(-15deg);
+  }
+  .btn:after{
+    content:'';
+    display:block;
+    position:absolute;
+    background: rgba(255,255,255,.5);
+    width:30px;
+    height:100%;
+    left:30px;
+    top:0;
+    opacity:0;
+    filter:blur(30px);
+    transform:translateX(-100px) scaleX(-15deg);
+  }
+  .btn:hover{
+    background:#438d9c;
+    cursor:pointer;
+  }
+  .btn:hover:before{
+    transform:translateX(300px) skewX(-15deg);
+    opacity:.6;
+    transition:.7s;
+  }
+  .btn:hover:after{
+    transform:translateX(300px) skewX(-15deg);
+    opacity:1;
+    transition:.7s;
+  }</style></head> 
+   <body> 
+    <div class="login"> 
+     <h1>Login</h1> 
+     <h1> 
+      <div class="text"> 
+       <svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" /> 
+        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /> 
+        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" /> 
+       </svg> 
+       <input type="text" placeholder="Username" name="" value="" required> 
+      </div> 
+      <div class="text"> 
+       <svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+        <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z" /> 
+        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" /> 
+       </svg> 
+       <input type="password" placeholder="password" name="" value="" required> 
+      </div> <button class="btn">login</button> </h1> 
+    </div> 
+   
+  </body></html>
