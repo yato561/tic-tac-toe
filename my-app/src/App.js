@@ -44,7 +44,7 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   const winner = calculateWinner(squares);
   let status;
-  status= winner? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`;
+  status = winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`;
   return(
     <>
     <div className="status">{status}</div>
